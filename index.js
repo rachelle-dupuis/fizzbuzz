@@ -1,4 +1,7 @@
-for (let i = 1; i <= 300; i++ ) {
+var readlineSync = require('readline-sync');
+var maxNumber = readlineSync.question('Welcome to FizzBuzz! What number would you like to count to?');
+
+for (let i = 1; i <= maxNumber; i++ ) {
     let fizzBuzzArray = [];
     if (i % 3 === 0) {
         fizzBuzzArray.push('Fizz');
