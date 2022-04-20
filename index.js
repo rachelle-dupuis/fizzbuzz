@@ -9,6 +9,9 @@ for (let i = 1; i <= 200; i++ ) {
     if (i % 7 === 0) {
         fizzBuzzArray.push('Bang');
     }
+    if (i % 11 === 0) {
+        fizzBuzzArray = ['Bong'];
+    }
     if (fizzBuzzArray.length === 0) {
         fizzBuzzArray.push(i);
     }
