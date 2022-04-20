@@ -1,4 +1,4 @@
-for (let i = 1; i <= 200; i++ ) {
+for (let i = 1; i <= 300; i++ ) {
     let fizzBuzzArray = [];
     if (i % 3 === 0) {
         fizzBuzzArray.push('Fizz');
@@ -23,6 +23,9 @@ for (let i = 1; i <= 200; i++ ) {
                 }
             }
         }
+    }
+    if (i % 17 === 0) {
+        fizzBuzzArray.reverse();
     }
     if (fizzBuzzArray.length === 0) {
         fizzBuzzArray.push(i);
